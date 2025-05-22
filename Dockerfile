@@ -1,4 +1,4 @@
-FROM node:20 AS build
+FROM node:22 AS build
 
 ARG CONF_SWITCH
 ENV CONF_SWITCH ${CONF_SWITCH:-buildOfficialProd}
