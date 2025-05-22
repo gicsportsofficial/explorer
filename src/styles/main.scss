@@ -165,24 +165,17 @@ body {
         }
 
         > .logo {
-            background: url('../images/logo.svg') no-repeat 0 3px;
-            min-height: 44px;
+            background: url('../images/waves-124.svg') no-repeat 0 3px;
+            min-height: 24px;
 
             a {
                 display: block;
-                height: 44px;
+                height: 24px;
                 position: absolute;
                 z-index: 1;
-                width: 220px;
+                width: 120px;
             }
 
-            &::after {
-                content: "Explorer";
-                left: 52px;
-                bottom: -9.5px;
-                position: relative;
-                @include font(headline1);
-            }
         }
     }
 }
