@@ -1,13 +1,20 @@
+@function map-deep-get($map, $keys...) {
+    @each $key in $keys {
+        $map: map-get($map, $key);
+    }
+    @return $map;
+}
+
 $colors: (
-    basic50: #f8f9fb,
-    basic500: #9ba6b2,
+    basic50: #0B0B0D,
+    basic500: #FFFFFF,
     basic700: #4e5c6e,
     accent50: #e9e9eb,
-    disabled500: #999999,
+    disabled500: #FFFFFF,
     black: #000000,
     white: #ffffff,
-    submit200: #bacaf4,
-    submit400: #7dd857,
+    submit200: #FFFFFF,
+    submit400: #EF4444,
     submit500: #1751EC,
     submit600: #2051D3,
     success400: #4aad02,
@@ -210,6 +217,7 @@ $social: (
     twitter: '../images/twitter-28.svg',
     discord: '../images/discord-28.svg',
     telegram: '../images/telegram-28.svg',
+    instagram: "../images/instagram-28.svg",
     reddit: '../images/reddit-28.svg'
 );
 

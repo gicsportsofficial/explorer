@@ -1,5 +1,5 @@
-@import "variables";
-@import "mixins.scss";
+@use "variables";
+@use "mixins.scss";
 
 input {
     box-sizing: border-box;
@@ -29,6 +29,7 @@ input {
 
         @include font(headline3);
         line-height: 1.25;
+        color: #fff;
 
         & ::placeholder {
             @include font(headline3, basic500);

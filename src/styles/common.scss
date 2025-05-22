@@ -6,11 +6,11 @@
 @import "converters.scss";
 
 .basic50 {
-    color: #f8f9fb
+    color: #0B0B0D
 }
 
 .basic500 {
-    color: #9ba6b2
+    color: #FFFFFF
 }
 
 .basic700 {
@@ -22,7 +22,7 @@
 }
 
 .disabled500 {
-    color: #999999
+    color: #FFFFFF
 }
 
 .black {
@@ -34,11 +34,11 @@
 }
 
 .submit200 {
-    color: #bacaf4
+    color: #FFFFFF
 }
 
 .submit400 {
-    color: #7dd857
+    color: #EF4444
 }
 
 .success400 {
@@ -119,7 +119,7 @@ a {
     }
 
     &.no-accent {
-        color: map-get($colors, black);
+        color: #fff;
         font-weight: normal;
     }
 

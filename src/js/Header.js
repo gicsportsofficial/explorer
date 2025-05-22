@@ -9,8 +9,10 @@ const Header = (props) => {
                     <span className="middle-bar"></span>
                 </div>
                 <div className="logo"><a href="/"></a></div>
+                
             </div>
             {props.children}
+            <button type="" class="buttonToLinks"></button>
         </div>
     );
 };

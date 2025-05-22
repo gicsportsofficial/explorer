@@ -1,6 +1,6 @@
 import React from 'react';
 
-import appLoading from '../images/logo.svg';
+import appLoading from '../images/animation.jpg';
 
 const Fallback = () => {
     return (

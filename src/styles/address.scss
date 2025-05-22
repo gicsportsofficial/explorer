@@ -1,5 +1,5 @@
-@import "variables";
-@import "mixins.scss";
+@use "variables";
+@use "mixins.scss";
 
 table.address-tr-list {
     th.timestamp, td.timestamp {

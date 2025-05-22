@@ -21,13 +21,13 @@ body {
     position: relative;
     height: calc(100% - 36px);
     display: block;
-    background-color: map-get($colors, basic50);
     @include responsive_styles($layout);
     min-width: 360px;
     padding-bottom: 36px;
-    @media screen and(min-width: 800px) {
+    @media screen and (min-width: 800px) {
         min-height: 560px;
     }
+    background: #000 !important;
 }
 
 .loaderWrapper {
@@ -116,6 +116,22 @@ body {
         height: 88px;
     }
 
+    > .buttonToLinks{
+        flex: 0;
+        padding: 10px;
+        margin-left: 10px;
+        background-color: #EF4444;
+        color: #fff;
+        border-radius: 5px;
+        height: 44px;
+        min-width: 44px;
+        border: none;
+        background-image: url("../images/select.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 50%;
+    }
+
     > .header-title {
         align-items: center;
         width: map-get($header, title_width);
@@ -165,8 +181,11 @@ body {
         }
 
         > .logo {
-            background: url('../images/waves-124.svg') no-repeat 0 3px;
+            background: url('../images/animation.jpg') no-repeat 0 3px;
             min-height: 24px;
+            height: 100%;
+            max-height: 100px;
+            background-size: contain;
 
             a {
                 display: block;
@@ -319,13 +338,13 @@ body {
                 @include font(headline2, disabled500);
 
                 &:hover {
-                    color: map-get($colors, black);
+                    color: map-get($colors, #EF4444);
                 }
             }
 
             &.current {
                 a {
-                    color: map-get($colors, black);
+                    color: map-get($colors, #EF4444);
                 }
 
                 &::before {
@@ -389,10 +408,10 @@ body {
 }
 
 .card {
-    background-color: map-get($colors, white);
+    background-color: map-get($colors, #1F2937);
     border-radius: 4px;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.14);
-
+    color: #fff !important;
     @include font(body);
     @include responsive_styles($card);
 }
@@ -404,7 +423,7 @@ body {
     padding: 0 !important;
     display: flex;
     justify-content: space-between;
-
+    color: #fff !important;
     @media screen and (max-width: 800px) {
         flex-direction: column;
     }
@@ -439,15 +458,15 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #fff;
+    background: #000;
     overflow: auto;
-    -webkit-overflow-scrolling: touch;
     border-radius: 4px;
     padding: 0 36px 36px;
     width: 100%;
     max-width: 600px;
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
     outline: 0 none;
+    border: 1px solid #EF4444 !important;
 
     .buttons-wrapper {
         display: flex;
@@ -506,6 +525,7 @@ body {
             &.has-copy-button {
                 input {
                     padding-right: 36px;
+                    color: #000 !important;
                 }
             }
         }
@@ -546,12 +566,14 @@ body {
     }
 
     .current-network {
+        color: #fff !important;
         display: flex;
         align-items: center;
         font-size: 14px;
     }
 
     .header {
+        color: #fff !important;
         background: map-get($colors, basic50);
         margin: 0 -36px;
         line-height: 1;
@@ -624,7 +646,8 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     transition: .3s;
-    background-color: map-get($colors, iceBlue);
+    background-color: #000 !important;
+    border: 1px solid #EF4444 !important;
     &:hover {
         background-color: map-get($colors, paleBlue);
     }
@@ -716,6 +739,7 @@ body {
 
     .current-network {
         display: flex;
+        color: #fff !important;
         align-items: center;
         margin-right: 76px;
         position: relative;
@@ -727,7 +751,8 @@ body {
             cursor: pointer;
             border-radius: 6px;
             transition: .3s;
-            background: map-get($colors, iceBlue);
+            background: #000 !important;
+            border: 1px solid #EF4444;
             position: relative;
             padding: 6px 40px 6px 8px;
 

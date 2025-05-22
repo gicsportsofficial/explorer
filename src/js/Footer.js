@@ -5,19 +5,13 @@ const socialLinks = [{
     url: 'https://github.com/gicsportsofficial/'
 }, {
     id: 'twitter',
-    url: 'https://twitter.com/'
-}, {
-    id: 'facebook',
-    url: 'https://www.facebook.com/'
-}, {
-    id: 'discord',
-    url: 'https://discord.gg/'
-}, {
+    url: 'https://x.com/gicsports'
+},{
     id: 'telegram',
-    url: 'https://telegram.me/'
+    url: 'https://t.me/GicSmartChain'
 }, {
-    id: 'reddit',
-    url: 'https://reddit.com/'
+    id: 'instagram',
+    url: 'https://www.instagram.com/gic_sports'
 }];
 
 const Footer = ({version}) => {

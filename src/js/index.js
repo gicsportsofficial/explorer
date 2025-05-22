@@ -16,7 +16,7 @@ const AsyncApp = React.lazy(() => delay(250).then(() => import(/* webpackChunkNa
 
 const Main = () => {
     return (
-        <React.Suspense fallback={<Fallback />}>
+        <React.Suspense fallback={<Fallback />} style={{background:"#000"}}>
             <AsyncApp />
         </React.Suspense>
     );

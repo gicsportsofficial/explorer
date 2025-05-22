@@ -1,5 +1,5 @@
-@import "variables";
-@import "mixins.scss";
+@use "variables";
+@use "mixins.scss";
 
 .converter {
     display: flex;
@@ -54,10 +54,10 @@
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        background-color: #F8F9FB;
+        background-color: #0B0B0D;
 
         * {
-            background-color: #F8F9FB;
+            background-color: #0B0B0D;
         }
 
         &-field {
@@ -80,7 +80,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background: #7dd857;
+        background: #EF4444;
         color: white;
         font-size: 14px;
         border-radius: 6px;

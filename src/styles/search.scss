@@ -1,9 +1,13 @@
-@import "variables";
-@import "mixins.scss";
+@use "variables";
+@use "mixins.scss";
 
 .search-box {
     position: relative;
+    color: #fff;
 
+    border: 3px solid #EF4444 !important;
+    border-radius: 5px;
+    padding: 10px 15px;
     &::before {
         height: 1px;
         width: 100%;
@@ -13,6 +17,9 @@
         display: block;
         transition: background-color .5s;
         background-color: map-get($colors, basic500);
+        border: none !important;
+        background: #fff0 !important;
+        color: none !important;
     }
 
     .search {
@@ -67,7 +74,7 @@
     }
 
     > input {
-        border-bottom: none;
+        border: none !important;
     }
 
     > .clear {
